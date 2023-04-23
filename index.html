@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <title>Weather Report App</title>
+    </head>
+
+<body>
+    <header class="header">
+        <h1 class="title">Weather Report App</h1>
+    </header>
+    <main>
+        <div class="col-12 col-md-4"></div>
+        <div class="search">
+            <form id="searchBar" class="search-body">
+                <label class="searchLabel" for="term">City name</label>
+                <input name="Search" id="search" type="text" autofocus="true" class="form-input"/>
+                <button type="submit" class ="btn">Get weather</button>
+            </form>
+        </div>
+        <div class="PrevSearch"></div>
+
+        <div class="weather-container">
+            <div class="weatherResult"></div>
+        </div>
+        <div class="forecast-container">
+        <h2>5-Day Forecast:</h2>
+        <div class="forecastResult"></div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
